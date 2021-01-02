@@ -419,7 +419,7 @@ footer
   right: 1rem;
   font-size: 2.5rem;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   background: none;
   color: #aeb0b3;
   opacity: 0.7;
@@ -428,7 +428,13 @@ footer
 
 #to-top-btn:hover {
   color: #FFB703;
-  background: none;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #FFB703;
+}
+
+#to-top-btn::after {
+  content: '\02C4';
 }
 
 @media (max-width: 576px) {

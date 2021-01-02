@@ -49,7 +49,7 @@ $(this).siblings('.menu').slideToggle(300);
 
 $('.intro-layer, #about, #works, #contact, footer').click(function(){
     $(".menu").hide();
-})
+});
 
 /* title fadeIn */
 
