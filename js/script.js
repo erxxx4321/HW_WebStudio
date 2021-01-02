@@ -81,16 +81,16 @@ document.getElementById("defaultOpen").click();
 /* scroll to top button */
 
 $(document).ready(function() {
-    $('.to-top-btn').hide(0)
+    $('#to-top-btn').hide(0)
     
     $(window).scroll(function(){
         if($(this).scrollTop() > 200){
-        $('.to-top-btn').fadeIn(200);      
+        $('#to-top-btn').fadeIn(200);      
         } else {
-        $('.to-top-btn').fadeOut(300);
+        $('#to-top-btn').fadeOut(300);
         }
     });
-    $('.to-top-btn').click(function() {
+    $('#to-top-btn').click(function() {
         
         $('html , body').animate({scrollTop: 0}, 1000);
     });

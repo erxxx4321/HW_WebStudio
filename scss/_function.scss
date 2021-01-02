@@ -15,17 +15,18 @@
     opacity: 0;
 }
 
-.to-top-btn{
+#to-top-btn{
+    display: inline-block;
     position: fixed;
-    bottom: 1.25rem;
-    right: 0.5rem;
+    bottom: 1rem;
+    right: 0.25rem;
     outline: none;
     border: none;
     background: none;
-    font-size: 2.5rem;
     color: lighten($gray,15%);
     opacity: 0.7;
     z-index: 99;
+    transform: rotate(-90deg);
 
     &:hover{
         color: $yellow;
@@ -33,8 +34,8 @@
     }
 }
 
-@media (max-width: 576px){
-    .to-top-btn{
-        right: -0.25rem;
-    }
+#to-top-btn::after{
+    content: "\232A";
+    font-size: 1.5rem;
+    
 }
