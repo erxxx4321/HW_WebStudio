@@ -83,7 +83,7 @@ document.getElementById("defaultOpen").click();
 $(document).ready(function() {
     $('#to-top-btn').hide(0)
     
-    $('body, html').scroll(function(){
+    $(window).scroll(function(){
         if($(this).scrollTop() > 200){
         $('#to-top-btn').fadeIn(200);      
         } else {
