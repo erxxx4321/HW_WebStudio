@@ -13,14 +13,17 @@ const close = document.querySelector(".close");
 btn.onclick = () => {
     modal.style.display = "block";
 }
-close.onclick = () =>{
+close.onclick = () => {
     modal.style.display = "none";
 }
-function clearModal(e) {
-    if (e.target == modal) {
-        modal.style.display = "none";
-    }
+modal.onclick = () => {
+    modal.style.display = "none";
 }
+// function clearModal(e) {
+//     if (e.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
 window.addEventListener("click", clearModal)
 
