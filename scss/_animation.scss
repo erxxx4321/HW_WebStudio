@@ -1,0 +1,38 @@
+#intro01{
+    opacity: 0;
+}
+
+#intro02{
+    opacity: 0;
+}
+
+#intro03{
+    opacity: 0;
+    margin-top: 80px;
+}
+
+.fadeIn {
+    opacity: 0;
+}
+
+.to-top-btn{
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid lighten($gray,15%);
+    color: lighten($gray,15%);
+    background: $white;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 99;
+    transform: rotate(-90deg);
+
+    &:hover{
+        color: $yellow;
+        border: 1.5px solid $yellow;
+    }
+}

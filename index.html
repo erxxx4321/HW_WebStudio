@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/hw_logo.png" type="image/x-icon">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW Web Studio</title>
+</head>
+<body> 
+    <section id="intro" class="intro">
+        <div class="intro-layer">
+            <div class="container">
+                <h1 id="intro01"><a href="#">HW <span>Web Studio</span></a></h1>
+                <p id="intro02">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet suscipit porro voluptates earum optio. Pariatur optio quibusdam itaque alias quas.ptio. Pariatur optio quibusdam itaque alias quas.</p>
+                <button id="intro03" class="intro-btn">READ MORE</button>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <img src="img/close.png" alt="Close" class="close">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, debitis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, <span>Lorem, ipsum dolor.</span>debitis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, debitis.</p>
+            </div>
+        </div>
+         <button class="burger">
+            <span class="iconify" data-inline="false" data-icon="clarity:menu-line" style="font-size: 31px;"></span>
+        </button>
+        <ul class="menu">
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </section>
+    <section id="about" class="about">
+        <h3 class="fadeIn">About</h3>
+        <div class="inner-about">
+            <div class="about-content">
+                <h2 class="about-title">Helen Williams</h2>
+                <p>I'm a web developer in love with photography, painting and discovering new worlds and cultures.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus quo quisquam odit accusantium illum sequi voluptas labore exercitationem modi?A necessitatibus quo quisquam odit accusantium illum sequi voluptas labore exercitationem modi?</p>
+            </div>
+            <img src="img/profile.png" alt="profile">
+        </div>
+    </section>
+    <section id="works" class="works">
+        <h3 class="fadeIn">WORKS</h3>
+        <p class="fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sunt.</p>
+        <div class="tab">
+            <button class="tablink" onclick="openWork('all')" id="defaultOpen">ALL</button>
+            <button class="tablink" onclick="openWork('studio')">STUDIO</button>
+            <button class="tablink" onclick="openWork('business')">BUSINESS</button>
+        </div>
+        <div id="all" class="tabcontent">
+            <ul>
+                <li><img src="img/studio01.jpg" alt="studio"></li>
+                <li><img src="img/studio02.jpg" alt="studio"></li>
+                <li><img src="img/studio03.jpg" alt="studio"></li>
+                <li><img src="img/business01.jpg" alt="business"></li>
+                <li><img src="img/business02.jpg" alt="business"></li>
+                <li><img src="img/business03.jpg" alt="business"></li>
+            </ul>
+        </div>
+        <div id="studio" class="tabcontent">
+            <ul>
+                <li><img src="img/studio01.jpg" alt="studio"></li>
+                <li><img src="img/studio02.jpg" alt="studio"></li>
+                <li><img src="img/studio03.jpg" alt="studio"></li>
+            </ul>
+        </div>
+        <div id="business" class="tabcontent">
+            <ul>
+                <li><img src="img/business01.jpg" alt="business"></li>
+                <li><img src="img/business02.jpg" alt="business"></li>
+                <li><img src="img/business03.jpg" alt="business"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h3 class="fadeIn">Contact</h3>  
+        <ul class="info">
+            <li class="info-item">
+                <h5>office</h5>
+                <p>295 Witting Streets Suite 664, Taipei, Taiwan</p>
+            </li>
+            <li class="info-item">
+                <h5>call me</h5>
+                <a href="tel:02 3333 898 345">+02 3333 898 345</a>
+            </li>
+            <li class="info-item">
+                <h5>mail me</h5>
+                <a href="mailto:hwschool@example.com">hwschool@example.com</a>               
+            </li>
+            <li class="info-item">
+                <h5>follow me</h5>
+                <span onclick="window.location='#'" class="iconify" data-inline="false" data-icon="typcn:social-twitter-circular" style="font-size: 35px;"></span>
+                <span onclick="window.location='#'" class="iconify" data-inline="false" data-icon="typcn:social-facebook-circular" style="font-size: 35px;"></span>
+                <span onclick="window.location='#'" class="iconify" data-inline="false" data-icon="typcn:social-github-circular" style="font-size: 35px;"></span>
+            </li>
+        </ul>  
+        <form action="index.html">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" id="Message" placeholder="Message" rows="10"></textarea>
+        </form>
+    </section>
+    <footer class="footer">
+        <span>&#169; 2014 - 2020 Company Name. Terms and Conditions.</span>
+        <span>HW SCHOOL</span>
+    </footer> 
+    <button onclick="toTop()" class="to-top-btn">></button>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
