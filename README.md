@@ -11,17 +11,19 @@
 **About**
 
 * 運用grid做響應式排版，Desktop雙欄、Mobile單欄
-* 標題有加入scroll fadeIn
+* 標題隨scroll fade in
 
 **Works**
 
 * 使用JavaScript做簡易的書籤頁
 * 運用flex讓書籤頁內圖片自適應畫面寬度來做排版。
+* 標題隨scroll fade in
 
 **Contact** 
 
 * 運用grid做三階段響應式排版。
 * 電話及郵箱有加入連結，方便使用者聯繫。
+* 標題隨scroll fade in
 
 **Footer** 
 
