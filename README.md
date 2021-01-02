@@ -1,4 +1,4 @@
-## HW Web Studio 一頁式網站
+# HW Web Studio 一頁式網站
 
 ### 參考普遍Portfolio的架構，分成五個區塊Intro, About, Works, Contact, footer，色系以yellow, white, gray為主，細部透過css微調。以下依照區塊順序，介紹使用的技術，像是JavaScripts、jQuery運用及細節處理。
 
