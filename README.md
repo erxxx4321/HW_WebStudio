@@ -22,7 +22,7 @@
 **Contact** 
 
 * 運用grid做三階段響應式排版。
-* 電話及郵箱有加入連結，方便使用者聯繫。
+* 電話,郵箱及sns icon有加入連結，方便使用者聯繫。
 * 標題隨scroll fade in
 
 **Footer** 
