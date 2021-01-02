@@ -1,23 +1,8 @@
 /* intro fadeIn */
 
-$('#intro01').delay(100).animate({'opacity': '1'},800);
-$('#intro02').delay(500).animate({'opacity': '1'},800);
-$('#intro03').delay(800).animate({'marginTop': '+=-80px','opacity': '1'},800);
-
-
-/* title fadeIn */
-
-$(window).scroll(function(){
-    $('.fadeIn').each(function(e){
-        let bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
-        let bottom_of_window = $(window).scrollTop() + $(window).height();
-
-        if(bottom_of_window > bottom_of_object){
-            $(this).animate({'opacity':'1'},800);
-        }
-    })
-})
-
+$('#intro01').animate({'opacity': '1'},800);
+$('#intro02').delay(300).animate({'opacity': '1'},800);
+$('#intro03').delay(700).animate({'marginTop': '+=-80px','opacity': '1'},800);
 
 /* toggle modal */
 
@@ -42,9 +27,21 @@ window.addEventListener("click", clearModal)
 /* toggle burger menu */
 
 $('.burger').click(function() {
-$(this).siblings('.menu').slideToggle();
+$(this).siblings('.menu').slideToggle(300);
 });
 
+/* title fadeIn */
+
+$(window).scroll(function(){
+    $('.fadeIn').each(function(e){
+        let bottom_of_object = $(this).offset().top + $(this).outerHeight(); 
+        let bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if(bottom_of_window > bottom_of_object){
+            $(this).animate({'opacity':'1'},800);
+        }
+    })
+})
 
 /* toggle works tab */
 
