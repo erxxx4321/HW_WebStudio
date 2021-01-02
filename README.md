@@ -5,7 +5,7 @@
 **Intro**
 
 * delay延遲分行文字fadeIn時點，button使用animate製造回彈效果。
-* 使用JavaScript產生popup modal box，彈出後點擊box外區塊即消失(這部分在IOS有bug，可能是因為使用到event delegation的關係，仍在測試中，待解決）
+* 使用JavaScript產生popup modal box，彈出後點擊box外區塊即消失
 * 漢堡選單運用slideToggle製造向下滑出效果。
 
 **About**
