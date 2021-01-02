@@ -45,6 +45,12 @@ $('.burger').click(function() {
 $(this).siblings('.menu').slideToggle(300);
 });
 
+/* clear menu */
+
+$('.intro-layer, #about, #works, #contact, footer').click(function(){
+    $(".menu").hide();
+})
+
 /* title fadeIn */
 
 $(window).scroll(function(){
