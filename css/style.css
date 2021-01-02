@@ -432,7 +432,7 @@ footer
 
 @media (max-width: 576px) {
   .to-top-btn {
-    right: 0;
+    right: -0.25rem;
   }
 }
 
