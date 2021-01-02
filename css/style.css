@@ -419,27 +419,25 @@ footer
   right: 1rem;
   font-size: 2.5rem;
   outline: none;
-  border: 2px solid transparent;
   background: none;
+  border: none;
   color: #aeb0b3;
-  opacity: 0.7;
   z-index: 99;
-}
-
-#to-top-btn:hover {
-  color: #FFB703;
-  padding: 0 0.5rem;
-  border-radius: 50%;
-  border: 2px solid #FFB703;
 }
 
 #to-top-btn::after {
   content: '\02C4';
+  opacity: 0.7;
+}
+
+#to-top-btn:hover {
+  color: #FFB703;
+  border-radius: 50%;
 }
 
 @media (max-width: 576px) {
   #to-top-btn {
-    right: 0;
+    right: 0.2rem;
   }
 }
 
