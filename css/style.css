@@ -415,11 +415,11 @@ footer
 .to-top-btn {
   position: fixed;
   bottom: 1.25rem;
-  right: 1.25rem;
+  right: 0.5rem;
   outline: none;
   border: none;
   background: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #aeb0b3;
   opacity: 0.7;
   z-index: 99;
@@ -428,6 +428,12 @@ footer
 .to-top-btn:hover {
   color: #FFB703;
   background: none;
+}
+
+@media (max-width: 576px) {
+  .to-top-btn {
+    right: 0;
+  }
 }
 
 .modal {

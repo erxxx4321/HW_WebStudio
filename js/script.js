@@ -10,15 +10,27 @@ const modal = document.querySelector(".modal");
 const btn = document.querySelector(".intro-btn");
 const close = document.querySelector(".close");
 
-btn.onclick = () => {
+btn.onclick = function() {
     modal.style.display = "block";
 }
-close.onclick = () => {
+
+function clearModal(){
     modal.style.display = "none";
 }
-modal.onclick = () => {
-    modal.style.display = "none";
+
+close.onclick = function(){
+    clearModal();
 }
+
+modal.onclick = function(){
+    clearModal();
+}
+
+
+// modal.onclick = () => {
+//     modal.style.display = "none";
+// }
+
 // // function clearModal(e) {
 // //     if (e.target == modal) {
 // //         modal.style.display = "none";

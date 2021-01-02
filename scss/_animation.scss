@@ -18,11 +18,11 @@
 .to-top-btn{
     position: fixed;
     bottom: 1.25rem;
-    right: 1.25rem;
+    right: 0.5rem;
     outline: none;
     border: none;
     background: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: lighten($gray,15%);
     opacity: 0.7;
     z-index: 99;
@@ -30,5 +30,11 @@
     &:hover{
         color: $yellow;
         background: none;
+    }
+}
+
+@media (max-width: 576px){
+    .to-top-btn{
+        right: 0;
     }
 }
