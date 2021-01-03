@@ -28,9 +28,6 @@
     opacity: 0.7;
     z-index: 99;
 
-    // &::after{
-    //     content: '\02C4';         
-    // }
     &:hover{
         color: $yellow;
         border-radius: 50%;

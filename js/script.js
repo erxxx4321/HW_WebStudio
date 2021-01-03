@@ -27,18 +27,6 @@ modal.onclick = function(){
 }
 
 
-// modal.onclick = () => {
-//     modal.style.display = "none";
-// }
-
-// // function clearModal(e) {
-// //     if (e.target == modal) {
-// //         modal.style.display = "none";
-// //     }
-// // }
-
-// window.addEventListener("click", clearModal)
-
 /* toggle burger menu */
 
 $('.burger').click(function() {
