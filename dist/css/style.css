@@ -365,6 +365,7 @@ form textarea {
   outline: none;
   border: none;
   border-bottom: 1px solid #d5d6d8;
+  font-size: 1.25rem;
 }
 
 form textarea {
