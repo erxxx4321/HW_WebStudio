@@ -112,7 +112,7 @@ Intro section
 
 .intro-layer h1 a {
   font-size: 3rem;
-  line-height: 1.2;
+  line-height: 2;
   text-decoration: none;
   color: #fffffb;
 }
@@ -120,7 +120,7 @@ Intro section
 .intro-layer p {
   color: #fffffb;
   line-height: 1.6;
-  padding: 0.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem 2rem;
 }
 
 .intro-btn {
@@ -270,23 +270,23 @@ Works-section
   border-bottom: 1px solid black;
 }
 
-.tabcontent {
+.tab-content {
   display: none;
   border-top: none;
 }
 
-.tabcontent ul {
+.tab-content ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.tabcontent ul li {
+.tab-content ul li {
   width: 250px;
   margin: 0.75rem;
 }
 
-.tabcontent img {
+.tab-content img {
   width: 100%;
   border: 1px solid #86898E;
   box-shadow: 0 0 5px #86898E;
@@ -339,11 +339,11 @@ Contact-section
   border-bottom: 1px solid #d5d6d8;
 }
 
-.info .iconify {
+.info span {
   cursor: pointer;
 }
 
-.info .iconify:hover {
+.info span:hover {
   border-bottom: 1px solid #d5d6d8;
 }
 
