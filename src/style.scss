@@ -4,10 +4,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
 
 $yellow: #FFB703;
 $gray: #86898E;
@@ -15,7 +11,7 @@ $white: rgb(255, 255, 251);
 
 
 /* * * * * * * * *
-Intro section
+Intro
 * * * * * * * * */
 
 .intro div{
@@ -48,7 +44,6 @@ Intro section
 .intro-layer h1 a{
     font-size: 3rem;
     line-height: 2;
-    text-decoration: none;
     color: $white;
 }
 
@@ -110,8 +105,7 @@ Intro section
 
 .menu a{
     display: block;
-    text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: $yellow;
     padding: 0.75rem 1rem;
  
@@ -124,7 +118,7 @@ Intro section
 
 
 /* * * * * * * *
-About section
+About
 * * * * * * * * */
 .about{
     max-width: 960px;
@@ -157,7 +151,7 @@ About section
 .about-content .about-title{
     font-size: 2rem;
     font-weight: 300;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .about-content p{
@@ -165,7 +159,7 @@ About section
 }
 
 /* * * * * * * *
-Works-section 
+Works 
 * * * * * * * */
 
 .works{
@@ -180,31 +174,31 @@ Works-section
 }
 
 .works h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     letter-spacing: 0.3rem;
 }
 
-.works >p{
-    margin: 1em;
+.works p{
+    margin: 1rem;
 }
 
-.tab {
-    overflow: hidden;
-    margin-top: 1em;
+.tab-links {
+    margin-top: 1rem;
+    display: flex;
 }
 
 /* buttons inside the tab */
-.tab >button{
+.tab-link{
     border: none;
     outline: none;
     cursor: pointer;
     padding: 10px;
     transition: 0.3s;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     background: $white;
 }
 
-.tab >button:hover{
+.tab-link :hover{
     border-bottom: 1px solid black;
 }
 
@@ -231,7 +225,7 @@ Works-section
 }
 
 /* * * * * * * *
-Contact-section 
+Contact 
 * * * * * * * */
 
 .contact{
@@ -262,7 +256,7 @@ Contact-section
     text-transform: uppercase;
     font-weight: 500;
     color: $yellow;
-    padding: 1em 0;
+    padding: 1rem 0;
 }
 
 .info-item p, a{
@@ -270,7 +264,6 @@ Contact-section
 }
 
 .info-item a{
-    text-decoration: none;
     color: #000;
 
     &:hover{
@@ -296,7 +289,7 @@ form{
 
 form input[type=text]{
     width: 31%;
-    padding: 0.5em 0.8em;
+    padding: 0.5rem 0.8rem;
 }
 
 form input,
@@ -310,7 +303,7 @@ form textarea{
 form textarea{
     width: 100%;
     resize: none;
-    padding: 2em 0.6em;
+    padding: 2rem 0.6rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -331,8 +324,8 @@ footer
 }
 
 .footer span{
-    font-size: 0.75em;
-    padding: 1.5em  1em;
+    font-size: 0.75rem;
+    padding: 1.5rem  1rem;
 }
 
 @import "function";
