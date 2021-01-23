@@ -54,7 +54,7 @@ $(window).scroll(function(){
 
 /* toggle works tab */
 
-function openWork(workName,elmnt,color) {
+function openWork(workName,element,color) {
 var i, tabContent, tabLinks;
 tabContent = document.getElementsByClassName("tab-content");
 for (i = 0; i < tabContent.length; i++) {
@@ -65,7 +65,7 @@ for (i = 0; i < tabLinks.length; i++) {
     tabLinks[i].style.backgroundColor = "";
 }
 document.getElementById(workName).style.display = "block";
-elmnt.style.backgroundColor = color;
+element.style.backgroundColor = color;
 }
 
 // Get the element with id="defaultOpen" and click on it
