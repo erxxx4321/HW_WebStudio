@@ -1,12 +1,12 @@
 ## HW Web Studio - Portfolio Template
----
 
-<a href="hw.mp4" title="HW web studio"><img src="display.png" alt="HW web studio" /></a>
-
+[![demo](demo.png)](https://kaorihata.github.io/HW_WebStudio/)
+<br>
 
 ### Description
 ---
 One-page portfolio website includes interactive designs with high usability. Modern css framework supports cross-device usage.
+<br>
 
 ### Main Features
 ---
@@ -18,6 +18,7 @@ One-page portfolio website includes interactive designs with high usability. Mod
 - Documentation included
 - Code easy to customize
 - Includes CSS animation
+<br>
 
 ### Credits
 ---
