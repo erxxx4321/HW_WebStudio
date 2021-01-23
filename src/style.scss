@@ -1,4 +1,4 @@
-@import "normalize";
+@import "reset";
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,6 @@ Intro
 
 .intro-layer h1 a{
     font-size: 3rem;
-    line-height: 2;
     color: $white;
 }
 
@@ -51,6 +50,7 @@ Intro
     color: $white;
     line-height: 1.6;
     padding: 0.5rem 0.5rem 2rem;
+    font-size: 1.25rem;
 }
 
 .intro-btn{
