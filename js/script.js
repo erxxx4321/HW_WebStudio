@@ -54,18 +54,18 @@ $(window).scroll(function(){
 
 /* toggle works tab */
 
-function openWork(workName,elmnt,color) {
-var i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function openWork(workName,element,color) {
+var i, tabContent, tabLinks;
+tabContent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
 }
-tablinks = document.getElementsByClassName("tablink");
-for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+tabLinks = document.getElementsByClassName("tab-link");
+for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].style.backgroundColor = "";
 }
 document.getElementById(workName).style.display = "block";
-elmnt.style.backgroundColor = color;
+element.style.backgroundColor = color;
 }
 
 // Get the element with id="defaultOpen" and click on it

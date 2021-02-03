@@ -1,0 +1,333 @@
+@import "reset";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+$yellow: #FFB703;
+$gray: #86898E;
+$white: rgb(255, 255, 251);
+
+
+/* * * * * * * * *
+Intro
+* * * * * * * * */
+
+.intro div{
+    position: absolute;
+}
+
+.intro{
+    position: relative;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-layer{
+    width: 100%;
+    height: 80vh;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 80%;
+}
+
+.intro-layer h1 a{
+    font-size: 3rem;
+    color: $white;
+}
+
+.intro-layer p{
+    color: $white;
+    line-height: 1.6;
+    padding: 0.5rem 0.5rem 2rem;
+    font-size: 1.25rem;
+}
+
+.intro-btn{
+    border: none;
+    outline: none;
+    background: $yellow;
+    color: darken($white, 2%);
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+
+    &:hover{
+        background: lighten($yellow, 10%);
+    }
+    &:active{
+        box-shadow: 0 0 3px 2px $white inset;
+    }
+}
+
+.burger{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    width: 3rem;
+    padding: 0.75rem;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: $yellow;
+    background: transparent;
+    z-index: 999;
+
+    &:hover{
+        color: lighten($yellow, 10%);
+    }
+}
+
+.menu{
+    // toggle start
+    display: none; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 80vh;
+    background: $white;
+    padding-top: 4rem;
+    text-align: center;
+    z-index: 3;
+}
+
+
+.menu a{
+    display: block;
+    letter-spacing: 0.1rem;
+    color: $yellow;
+    padding: 0.75rem 1rem;
+ 
+    &:hover{
+        background: $yellow;
+        opacity: 0.7;
+        color: $white;
+    }
+}
+
+
+/* * * * * * * *
+About
+* * * * * * * * */
+.about{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 1rem 0;
+}
+
+.about h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.inner-about{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.inner-about img{
+    justify-self: end;
+}
+
+.about-content{
+    padding: 0 1rem;
+}
+
+.about-content .about-title{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.about-content p{
+    line-height: 1.6;
+}
+
+/* * * * * * * *
+Works 
+* * * * * * * */
+
+.works{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1rem 0;
+}
+
+.works h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.works p{
+    margin: 1rem;
+}
+
+.tab-links {
+    margin-top: 1rem;
+    display: flex;
+}
+
+/* buttons inside the tab */
+.tab-link{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.75rem;
+    background: $white;
+}
+
+.tab-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.tab-content{
+    display: none;
+    border-top: none;
+}
+
+.tab-content ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tab-content ul li{
+    width: 250px;
+    margin: 0.75rem;
+}
+
+.tab-content img{
+    width:100%;
+    border: 1px solid $gray;
+    box-shadow: 0 0 5px $gray;
+}
+
+/* * * * * * * *
+Contact 
+* * * * * * * */
+
+.contact{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 1rem 0
+}
+
+.contact h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
+    gap: 1rem;   
+}
+
+.info-item{
+    width: 80%;
+}
+
+.info-item h5{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $yellow;
+    padding: 1rem 0;
+}
+
+.info-item p, a{
+    line-height: 1.6;
+}
+
+.info-item a{
+    color: #000;
+
+    &:hover{
+        border-bottom: 1px solid lighten($gray, 30%);
+    }
+}
+
+.info span{
+   cursor: pointer;
+}
+
+.info span:hover{
+    border-bottom: 1px solid lighten($gray, 30%);
+}
+
+/* ----------- */
+form{
+    padding: 5rem 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form input[type=text]{
+    width: 31%;
+    padding: 0.5rem 0.8rem;
+}
+
+form input,
+form textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lighten($gray, 30%);
+    font-size: 1.25rem;
+}
+
+form textarea{
+    width: 100%;
+    resize: none;
+    padding: 2rem 0.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input:hover,
+form textarea:hover{
+    border-bottom: 1px solid #000;
+}
+
+/* * * * * * * *
+footer 
+* * * * * * * */
+.footer{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-top: 1px solid $gray;
+}
+
+.footer span{
+    font-size: 0.75rem;
+    padding: 1.5rem  1rem;
+}
+
+@import "function";
+@import "modal";
+@import "rwd";
